@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/1.css">
+    </head>
+    <header>
+    <div class="container">
+      <h1>Форма регистрации</h1>
+      <p>Пожалуйста, заполните все поля.</p>
+      <hr>
+  
+      <label for="фамилия"><b>фамилия</b></label>
+      <input type="text" placeholder="Введите фамилию" name="фамилия" required>
+
+      <label for="Имя"><b>Имя</b></label>
+      <input type="text" placeholder="Введите имя" name="имя" required>
+
+      <label for="Отчество"><b>Отчество</b></label>
+      <input type="text" placeholder="Введите Отчество" name="отчество" required>
+
+      <label for="date"><b>дата рождения</b></label>
+      <input type="date" name="date" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Введите вашу почту" name="email" required>
+  
+      <label for="namber"><b>номер телефона</b></label>
+      <input type="phone" placeholder="+7(900)-777-33-22" name="номер телефона" required>
+  
+      <label for="Тема конференции"><b>Тема конференции</b></label>
+      <select type="konf" placeholder="Выберете тему:" name="новый файл" required>
+      <option value="c1"> Выберете тему:</option>
+      <option value="c2"> математика</option>
+      <option value="c3"> физика</option>
+      <option value="c4"> информатика</option>
+    </select>
+    </p> 
+
+      <label ><b> доклад </b>>
+      <input type="checkbox" name="doklad" id="checkbox" onclick="checkFuncton()">
+      <input class="field" type="text" id="text" style="display:none" placeholder="Введите тему доклада........"></p>
+      <script src="js/поле.js"></script>
+      </label>
+  
+      <div class="clearfix">
+        <button type="submit" class="signupbtn">Регистрация</button>
+      </div>
+    </div>
+  </header>
+  </form>
